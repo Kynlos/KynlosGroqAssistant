@@ -1,0 +1,5 @@
+groq
+annoy
+requests
+beautifulsoup4
+numpy

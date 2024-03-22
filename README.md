@@ -11,16 +11,18 @@ This Python script provides an AI assistant with the ability to browse the web, 
 - **File Listing**: List files in a directory using the `#list` command.
 - **File Download**: Download files from a website using the `#download` command.
 - **String Search**: Find occurrences of a string within a file or directory using the `#find` command.
-- **Code Snippet Saving**: Save code snippets from the AI assistant's responses as separate files.
+- **Refer To Web Content**: Include the contents of a website within the context of your prompt using the `@domain.com` command. 
+- **Code Snippet Saving**: Save code snippets from the AI assistant's responses as separate files using the `:@save` command.
 
 ## Usage
 
 1. Install the required dependencies by running `pip install -r requirements.txt`.
 2. Set your Groq API key as an environment variable named `GROQ_API_KEY`. (Get one here: https://console.groq.com/keys)
-3. Run the script with `python ai_assistant.py`.
-4. Follow the prompts to select a language model and provide input.
-5. Use the available commands (e.g., `#open`, `#search`, `#read`, `#list`, `#download`, `#find`) to interact with the AI assistant and perform various tasks.
-6. To exit the script, enter `quit`.
+3. Run `pip install requirements.txt` to install the required dependencies. 
+4. Run the script with `python assist.py`.
+5. Follow the prompts to select a language model and provide input.
+6. Use the available commands (e.g., `#open`, `#search`, `#read`, `#list`, `#download`, `#find`) to interact with the AI assistant and perform various tasks.
+7. To exit the script, enter `quit`.
 
 ## Command Reference
 
@@ -30,7 +32,8 @@ This Python script provides an AI assistant with the ability to browse the web, 
 - `#list <directory>`: List files in the specified directory.
 - `#download <file_name> from <url>`: Download a file from a website.
 - `#find <string> in <file_or_directory>`: Find occurrences of a string within a file or directory.
-- `@website <url>`: Include a website contents in the conversation context (allows multiple websites to be included).
+- `@website <url>`: Include a websites contents in the conversation context (allows multiple websites to be included).
+- `:@save`: add anywhere into your prompt to save any code snippets (from code-blocks) that are in the AIs reply. (Note: This saves the file in the same folder as the script)
 - `#extract <file_or_image>`: Extract text from a file or image (not implemented yet).
 
 ## Code Structure

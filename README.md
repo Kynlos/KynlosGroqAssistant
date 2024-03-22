@@ -16,7 +16,7 @@ This Python script provides an AI assistant with the ability to browse the web, 
 ## Usage
 
 1. Install the required dependencies by running `pip install -r requirements.txt`.
-2. Set your Groq API key as an environment variable named `GROQ_API_KEY`.
+2. Set your Groq API key as an environment variable named `GROQ_API_KEY`. (Get one here: https://console.groq.com/keys)
 3. Run the script with `python ai_assistant.py`.
 4. Follow the prompts to select a language model and provide input.
 5. Use the available commands (e.g., `#open`, `#search`, `#read`, `#list`, `#download`, `#find`) to interact with the AI assistant and perform various tasks.
